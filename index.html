@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/uib-forms-inputs-2-florinfiath/css/style.css">
+    <title>Car Insurance</title>
+</head>
+<body>
+      <header>
+      <h1>Insure your car with us!</h1>
+    </header>
+    <main>
+        <form action="submit-information" method="POST">
+            <fieldset>
+               <h2>Car Insurance register form</h2>
+          
+          <div >
+            <label class="label"for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name"required maxlength="30" />
+          </div>
+          <div>
+            <label class="label"for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required maxlength="50"/>
+          </div>
+          <div>
+               <label class="label"for="user-picture">User picture:</label>
+            <input type="file" id="user-picture" name="user-picture" max="1"accept="image/*">
+          </div>
+          <div>
+            <label class="label"for="insurance-type">Insurance type:</label>
+          <input type="text"value="insurance-type 1"id="insurance-type"name="insurance-type"readonly>
+          </div>
+          <fieldset class="address">
+             <h2>Address</h2>
+               <div>
+            <label class="label"for="street-name">Street name:</label>
+            <input type="text" id="street-name" name="street-name"maxlength="150"required/>
+          </div>
+           <div>
+            <label class="label"for="house-nr">House number:</label>
+            <input type="text" id="house-nr" name="house-nr"min="1"max="300"required/>
+          </div>
+           <div>
+            <label class="label"for="postal-code">Postal code:</label>
+            <input type="text" id="postal-code" name="postal-code"required/>
+          </div>
+           <div>
+            <label class="label"for="city">City:</label>
+            <input type="text" id="city" name="city"required/>
+          </div>
+          </fieldset>
+         <div>
+            <label for="choose-city">Chose a city</label>
+                <input list="city1" type="text" id="city" name="city">
+           <datalist id="city1">
+                <option value="Berlin">
+                <option value="Hamburg">
+                <option value="Munich">
+                <option value="Stuttgart">
+                <option value="Ausburg">
+                <option value="Horb am Neckar">
+                <option value="Cottbus">
+                <option value="Tübingen">            
+</datalist>
+ </div>
+ <div class="car-brand">
+            <label for="car">Car Brand</label>
+                <select id="car1" name="car">
+           <datalist id="car1">
+                <option value="Mercedes">Mercedes</option>
+                <option value="Audi">Audi</option>
+                <option value="Opel">Opel</option>
+                <option value="Tesla">Tesla</option>
+                <option value="Toyota">Toyota</option>
+                <option value="WW">WW</option>
+                <option value="Ford">Ford</option>
+                <option value="Kia">Kia</option> 
+                <option value="Hyundai">Hyundai</option> 
+                <option value="Cadillac">Cadillac<option> 
+                <option value="Lexus">Lexus</option> 
+                <option value="Mazda">Mazda</option> 
+                <option value="Porche">Porche</option> 
+</datalist>
+</select>
+</div>
+
+    <div>
+        <button type="submit">Register</button>
+    </div> 
+
+</fieldset>
+</form>
+
+</main> 
+            
+</body>
+
+</html>
